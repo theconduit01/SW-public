@@ -29,6 +29,7 @@ public sealed partial class MedievalFactionsSystem : SharedMedievalFactionsSyste
         InitializeRelations();
         InitializeWanted();
         InitializeMenu();
+        InitializeRecruit();
 
         SubscribeLocalEvent<CloackMessageComponent, ComponentStartup>(OnStart);
         SubscribeLocalEvent<CloackMessageComponent, ComponentShutdown>(OnCloackMessageShutdown);
